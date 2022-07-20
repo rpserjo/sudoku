@@ -1,0 +1,57 @@
+.cell-small, .cell-big{
+	display: inline-block;
+}
+div{
+	margin: 0px;
+}
+.cell-small{
+	width: 45px;
+	height: 45px;
+	text-align: center;
+	line-height: 45px;
+	border: 1px solid black;
+	margin-right: -1px;
+	margin-bottom: -1px;
+}
+.cell-big{
+	border: 1px solid blue;
+	padding-right: 1px;
+	padding-bottom: 1px;
+	margin-bottom: -2px;
+	margin-right: -2px;
+}
+.attempt{
+	cursor: pointer;
+}
+.digits{
+	position: absolute;
+	border: 1px solid black;
+	z-index: 100;
+	background-color: #fff;
+	display: none;
+}
+.digit{
+	height: 40px;
+	width: 40px;
+	border: 1px solid black;
+	line-height: 40px;
+	text-align: center;
+	display: inline-block;
+	float: left;
+	cursor: pointer;
+}
+.digit:hover{
+	font-weight: bold;
+}
+.cell-small.active{
+	background-color: lightyellow;
+}
+.cell-small.wrong{
+	background-color: crimson;
+}
+.field{
+	position: relative;
+}
+.hovered{
+	background-color: lightblue;
+}
